@@ -25,7 +25,7 @@ for i in range(3) :
         print("catégorie n'est pas correcte")
         # break
         continue
-    montant = float(input("montant : "))
+    montant = float(input("le montant que vous voulez pour cette cat : "))
     depenses += montant
     if cat == "nourriture" :
         nourriture += montant
@@ -40,5 +40,5 @@ print("\n----resultat-----" )
 print("nourriture :" ,nourriture)
 print("skin_care :" ,skin_care)
 print("habits : " ,habits)
-print("le total : " ,total )
+print("le total de depenses : " ,depenses )
 print("le solde : " ,solde)
