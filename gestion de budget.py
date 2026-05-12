@@ -26,14 +26,15 @@ for i in range(3) :
         # break
         continue
     montant = float(input("montant : "))
+    depenses += montant
     if cat == "nourriture" :
         nourriture += montant
     elif cat == "skin_care" :
         skin_care += montant
     elif cat == "habits" :
         habits += montant
-total = nourriture + skin_care + habits
-solde = revenu - total
+        
+solde = revenu - depenses
 
 print("\n----resultat-----" )
 print("nourriture :" ,nourriture)
